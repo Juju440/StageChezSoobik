@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+}
+
+
+  
+#logofablab {
+    animation: swing 14s infinite ease-in-out;
+}
+  
+.event {
+    margin:100px auto;
+    text-align: center;
+    position: relative;
+}
+
+@keyframes swing {
+    0%, 100% { transform: rotate(-20deg); }
+    20% {transform:scale(.60);}
+    50% { transform: rotate(20deg); }
+    80% {transform:scale(.60);}
+}
