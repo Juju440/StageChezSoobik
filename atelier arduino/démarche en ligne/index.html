@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS only -->        
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header"></div>
+
+    <div class="bordure"></div>
+
+    <div class="row justify-content-center">
+        <div class="col-3"></div>
+            <div class="col-6 container">
+                <div class="container_formulaire">
+                    <div class="formulaire_titre">
+                        <h1 id="title">""Pour vous inscrire, veuillez remplir le formulaire ci-dessous""</h1>
+                    </div>
+
+                    <form style="font-family: Georgia, 'Times New Roman', Times, serif;">
+                    <div class="form-group">
+                        <label for="nom">Votre nom</label>
+                        <input type="text" class="form-control" id="nom" name="lastname" placeholder="Nom" required>                    
+                    </div>
+
+                    <div class="form-group">
+                        <label for="prenom">Votre prénom</label>
+                        <input type="text" class="form-control" id="prenom" name="firstname" placeholder="Prénom" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="birthday">Votre date de naissance</label>
+                        <input type="date" class="form-control" id="birthday" name="birthdayInput">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="inputAddress">Votre adresse</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Adresse de domicile complète">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cp">Code postal</label>
+                        <input type="text" class="form-control" id="cp" placeholder="Code postal" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="ville">Ville</label>
+                        <input type="text" class="form-control" id="ville" placeholder="Ville" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="pays">Pays</label>
+                        <input type="text" class="form-control" id="pays" placeholder="Pays" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Votre numéro de téléphone portable</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="Numéro de téléphone personnel">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailAddress">Votre adresse e-mail</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupPrepend">@</span>
+                            </div>
+                            <input type="email" class="form-control" id="emailAddress" aria-describedby="inputGroupPrepend" placeholder="exemple : soobik@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="select">Choisissez une date</label>
+                        <select class="custom-select mr-sm-2" id="select">
+                            <option selected>Liste des dates officielles</option>
+                            <option value="1">03 Octobre 2020</option>
+                            <option value="2">07 Novembre 2020</option>
+                            <option value="3">05 Décembre 2020</option>
+                        </select>
+                    </div>
+
+                    <div class="button">
+                        <div class="col-12 text-center">
+                            <button type="submit" class="btn btn-primary">Inscription</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-3"></div>
+
+        <footer>
+            <div class="footer_image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_cmFk5GozkBTcUasZqhYl2NGj_LUhzQTkcw&usqp=CAU" alt="" id="logo" style="width: 160px;">
+            </div>
+
+            <div class="footer_texte">
+                <p>Copyright &copy; 2020 <a href="https://www.soobik.com/" style="color: #4fccf3;">Soobik Solutions</a></p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
